@@ -32,6 +32,3 @@ jobs:
         with:
           profile: minimal
           toolchain: stable
-      - name: build files 
-        run: |
-          cargo install --git https://github.com/starcoinorg/starcoin move-cli --branch master
