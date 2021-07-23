@@ -27,3 +27,8 @@ jobs:
           name: dist
           path: quark
           repo: WormholeStudio/quark
+      - name: setup rust toolchain
+        uses: actions-rs/toolchain@v1
+        with:
+          profile: minimal
+          toolchain: stable
