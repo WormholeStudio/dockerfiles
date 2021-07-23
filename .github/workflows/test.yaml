@@ -26,10 +26,10 @@ jobs:
           # Required, if artifact is from a different repo
           github_token: ${{secrets.GITHUB_TOKEN}}
           # Required, workflow file name or ID
-          workflow: build_image.yaml
+          workflow: build.yaml
           branch: main
           name: quark.jar
           # Optional, directory where to extract artifact. Defaults to the artifact name (see `name` input)
-          path: quark.jar
+          path: quark
           # Optional, defaults to current repo
           repo: WormholeStudio/quark
