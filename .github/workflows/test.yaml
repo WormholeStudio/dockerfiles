@@ -30,6 +30,6 @@ jobs:
           branch: main
           name: quark.jar
           # Optional, directory where to extract artifact. Defaults to the artifact name (see `name` input)
-          path: quark/
+          path: quark.jar
           # Optional, defaults to current repo
           repo: WormholeStudio/quark
