@@ -13,9 +13,14 @@ jobs:
       contents: read
       packages: write 
     steps:
-      - 
-        uses: docker://wormholestudio/move-cli:latest
+        # Those steps are executed directly on the VM
+      - run: ls /
+      - run: echo $HOME
+      - name: Add a file
+        run: touch $HOME/stuff.txt
+
       - uses: actions/checkout@v2
       - run: ls && pwd && move
       - uses: ./.github/actions/action.yaml
-
+      - 
+        uses: docker://wormholestudio/move-cli:latest
