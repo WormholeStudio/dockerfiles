@@ -13,8 +13,8 @@ jobs:
       contents: read
       packages: write 
     steps:
-      - uses: actions/checkout@v2
-      - uses: ./.github/actions/action.yaml
       - 
         uses: docker://wormholestudio/move-cli:latest
+      - uses: actions/checkout@v2
+      - uses: ./.github/actions/action.yaml
 
