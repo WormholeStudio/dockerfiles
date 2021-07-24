@@ -7,15 +7,19 @@ on:
     branches: [ main ]
 
 jobs:
-  move:
-    runs-on: ubuntu-latest 
+  container:
+    container: docker://wormholestudio/move-cli:latest
     permissions: 
       contents: read
       packages: write 
     steps:
-      - uses: actions/checkout@v2
-      - 
-        uses: docker://wormholestudio/move-cli:latest
+
+      - run: ls /
+      - run: echo $HOME
+      
+#       - uses: actions/checkout@v2
+#       - 
+#         uses: docker://wormholestudio/move-cli:latest
       - uses: actions/checkout@v2
       - run: ls && pwd && move
       - uses: ./.github/actions/action.yaml
