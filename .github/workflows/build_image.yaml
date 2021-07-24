@@ -37,6 +37,7 @@ jobs:
           cache-to: type=local,dest=/tmp/.buildx-cache-new
           tags: |
             wormholestudio/move-cli:${{ github.sha }}
+            wormholestudio/move-cli:latest
       -
         name: Move cache
         run: |
