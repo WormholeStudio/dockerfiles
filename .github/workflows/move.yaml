@@ -16,5 +16,4 @@ jobs:
       - uses: actions/checkout@v2
       - 
         uses: docker://wormholestudio/move-cli:latest
-      - uses: ./.github/build/c_test.yaml  
-     
+      - uses: ./.github/actions/move
