@@ -24,4 +24,4 @@ jobs:
           name: dist
           path: quark
           repo: WormholeStudio/quark
-      - run: jar -jar quark/quark.jar
+      - run: java -jar quark/quark.jar
