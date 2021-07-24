@@ -24,6 +24,7 @@ jobs:
           name: dist
           path: quark
           repo: WormholeStudio/quark
-      - run:  move functional-test 
-      - run: move publish 
+      - run: |
+         move publish  && move functional-test 
+    
       # - run: java -jar quark/quark.jar
