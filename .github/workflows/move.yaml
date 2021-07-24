@@ -17,5 +17,6 @@ jobs:
       - 
         uses: docker://wormholestudio/move-cli:latest
       - uses: actions/checkout@v2
+      - run: ls && pwd
       - uses: ./.github/actions/action.yaml
 
