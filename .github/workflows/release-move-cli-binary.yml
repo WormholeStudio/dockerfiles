@@ -16,16 +16,19 @@ jobs:
           ref: 'master'
           path: 'starcoin'
           fetch-depth: 5
+
       - uses: actions-rs/toolchain@v1
         with:
           toolchain: stable
-      # - name: build move cli
-      #   working-directory: starcoin
-      #   run: cargo build --package move-cli --release
-      - name: build release
-        run: |
-          echo 123 > xxx
-          zip xxx.zip xxx
+
+      - name: build move cli
+        working-directory: starcoin
+        run: cargo build --package move-cli --release
+
+      - name: zip move cli
+        working-directory: starcoin
+        run: zip move.zip target/debug/move
+
       - name: create release
         id: create_release
         uses: actions/create-release@v1
@@ -33,7 +36,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
+          release_name: Daily release of move-cli
           draft: false
           prerelease: false
 
@@ -42,8 +45,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./xxx.zip
-          asset_name: xxx.zip
+          asset_path: move.zip
+          asset_name: move.zip
           asset_content_type: application/zip
 
       - uses: eregon/publish-release@v1
