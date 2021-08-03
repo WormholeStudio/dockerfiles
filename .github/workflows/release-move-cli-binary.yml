@@ -41,7 +41,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: v${{ env.version }}
+          tag_name: v${{ env.version }}-linux
           release_name: Daily release of move-cli
           draft: false
           prerelease: false
