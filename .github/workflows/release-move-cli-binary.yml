@@ -1,0 +1,25 @@
+name: release move cli
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-linux-release:
+    name: build move cli on linux platform
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v2
+        with:
+          repository: 'github.com/starcoinorg/starcoin'
+          ref: 'master'
+          path: 'starcoin'
+          fetch-depth: 5
+      - uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+      - name: build move cli
+        run: |
+          cd starcoin/vm/move-cli
+          cargo build -Z unstable-options --out-dir .
