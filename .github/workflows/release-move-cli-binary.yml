@@ -22,12 +22,13 @@ jobs:
       # - name: build move cli
       #   working-directory: starcoin
       #   run: cargo build --package move-cli --release
+      - name: build release
+        run: zip xxx.zip Dockerfile
       - name: create release
         id: create_release
         uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: zip xxx.zip Dockerfile
 
       - uses: actions/upload-release-asset@v1.0.1
         env:
