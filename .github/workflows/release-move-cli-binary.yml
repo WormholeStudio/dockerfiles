@@ -23,7 +23,9 @@ jobs:
       #   working-directory: starcoin
       #   run: cargo build --package move-cli --release
       - name: build release
-        run: zip xxx.zip Dockerfile
+        run: |
+          echo 123 > xxx
+          zip xxx.zip xxx
       - name: create release
         id: create_release
         uses: actions/create-release@v1
