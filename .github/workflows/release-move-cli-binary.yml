@@ -27,7 +27,7 @@ jobs:
 
       - name: zip move cli
         working-directory: starcoin
-        run: zip move.zip target/debug/move
+        run: zip move.zip target/release/move
 
       - name: create release
         id: create_release
