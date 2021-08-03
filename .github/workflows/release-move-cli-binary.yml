@@ -20,6 +20,4 @@ jobs:
         with:
           toolchain: stable
       - name: build move cli
-        run: |
-          cd starcoin/vm/move-cli
-          cargo build -Z unstable-options --out-dir .
+        run: cargo build --package move-cli --release
