@@ -20,4 +20,5 @@ jobs:
         with:
           toolchain: stable
       - name: build move cli
+        working-directory: starcoin
         run: cargo build --package move-cli --release
