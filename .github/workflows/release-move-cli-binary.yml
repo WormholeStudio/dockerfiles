@@ -1,4 +1,5 @@
 name: release move cli
+
 on:
   push:
     branches:
@@ -30,13 +31,17 @@ jobs:
           cp starcoin/target/release/move .
           zip move.zip move
 
+      - name: set env
+        run: |
+          echo "version=$(date +%Y.%m.%d)" >> $GITHUB_ENV
+
       - name: create release
         id: create_release
         uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ github.sha }}
+          tag_name: v${{ env.version }}
           release_name: Daily release of move-cli
           draft: false
           prerelease: false
