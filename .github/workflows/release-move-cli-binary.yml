@@ -10,7 +10,6 @@ jobs:
     name: build move cli on linux platform
     strategy:
       matrix:
-        fail-fast: false
         platform:
           - ubuntu-latest
           - macos-latest
