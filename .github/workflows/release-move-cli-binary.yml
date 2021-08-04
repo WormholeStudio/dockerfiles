@@ -44,7 +44,6 @@ jobs:
         if: matrix.platform == 'windows-latest'
       - name: build for ${{ matrix.platform }}
         uses: actions-rs/cargo@v1
-        working-directory: starcoin
         with:
           command: build
           args: --release
