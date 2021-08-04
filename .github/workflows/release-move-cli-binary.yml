@@ -8,10 +8,12 @@ on:
 jobs:
   build-linux-release:
     name: build move cli on linux platform
-    matrix:
-      platform:
-        - ubuntu-latest
-        - macos-latest
+    strategy:
+      matrix:
+        fail-fast: false
+        platform:
+          - ubuntu-latest
+          - macos-latest
     runs-on: ${{matrix.platform}}
     steps:
       - name: checkout repository
