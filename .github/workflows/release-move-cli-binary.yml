@@ -9,9 +9,10 @@ jobs:
   build-linux-release:
     name: build move cli on linux platform
     matrix:
-    platform:
-      - ubuntu-latest
-      - macos-latest
+      platform:
+        - ubuntu-latest
+        - macos-latest
+    runs-on: ${{matrix.platform}}
     steps:
       - name: checkout repository
         uses: actions/checkout@v2
