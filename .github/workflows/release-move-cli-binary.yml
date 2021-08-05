@@ -7,7 +7,7 @@ on:
 
 jobs:
   build-linux-release:
-    name: build move cli on linux platform
+    name: build move cli 
     strategy:
       matrix:
         platform:
@@ -34,32 +34,37 @@ jobs:
       - name: zip move cli
         run: |
           cp starcoin/target/release/move .
-          zip move.zip move
-      - name: set env
-        run: |
-          echo "version=$(date +%Y.%m.%d)" >> $GITHUB_ENV
-      - name: create release
-        id: create_release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: v${{ env.version }}-${{ matrix.platform }}
-          release_name: Daily release of move-cli
-          draft: false
-          prerelease: false
+ #          zip move.zip move
 
-      - uses: actions/upload-release-asset@v1.0.1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/upload-artifact@v2
         with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: move.zip
-          asset_name: move-${{ matrix.platform }}.zip
-          asset_content_type: application/zip
+          name: move-${{ matrix.platform }}
+          path: move
+      # - name: set env
+      #   run: |
+      #     echo "version=$(date +%Y.%m.%d)" >> $GITHUB_ENV
+      # - name: create release
+      #   id: create_release
+      #   uses: actions/create-release@v1
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   with:
+      #     tag_name: v${{ env.version }}-${{ matrix.platform }}
+      #     release_name: Daily release of move-cli
+      #     draft: false
+      #     prerelease: false
 
-      - uses: eregon/publish-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          release_id: ${{ steps.create_release.outputs.id }}
+      # - uses: actions/upload-release-asset@v1.0.1
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   with:
+      #     upload_url: ${{ steps.create_release.outputs.upload_url }}
+      #     asset_path: move.zip
+      #     asset_name: move-${{ matrix.platform }}.zip
+      #     asset_content_type: application/zip
+
+      # - uses: eregon/publish-release@v1
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   with:
+      #     release_id: ${{ steps.create_release.outputs.id }}
