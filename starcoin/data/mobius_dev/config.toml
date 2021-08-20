@@ -5,13 +5,12 @@ interval = 0
 [miner]
 
 [network]
-node_name = "noiseless-blade-1705"
+node_name = "sour-seat-8146"
 
 [network.network_rpc_quotas]
 [rpc.api_quotas]
 
 [rpc.http]
-apis = "account,chain,debug,miner,network_manager,node_manager,node,pubsub,state,sync_manager,txpool,contract"
 
 [rpc.ipc]
 
