@@ -11,6 +11,7 @@ node_name = "sour-seat-8146"
 [rpc.api_quotas]
 
 [rpc.http]
+apis = "account,chain,debug,miner,network_manager,node_manager,node,pubsub,state,sync_manager,txpool,contract"
 
 [rpc.ipc]
 
