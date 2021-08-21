@@ -5,7 +5,7 @@ interval = 0
 [miner]
 
 [network]
-node_name = "sour-seat-8146"
+node_name = "teeny-pickle-3182"
 
 [network.network_rpc_quotas]
 [rpc.api_quotas]
