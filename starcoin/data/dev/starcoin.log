@@ -1,0 +1,194 @@
+2021-08-21T02:48:07.525434208+00:00 INFO - Write slog to file: "/data/starcoin/dev/starcoin.log"
+2021-08-21T02:48:07.528638083+00:00 INFO - slog config success.
+2021-08-21T02:48:07.533062625+00:00 ERROR - process_collector error: fail to collect process info of pid 1, err: PsutilError { pid: 1, source: ParseStatus { source: IncorrectChar { contents: "0" } } }
+2021-08-21T02:48:07.557298292+00:00 INFO - Registry service: starcoin_service_registry::bus::service::BusService
+2021-08-21T02:48:07.561374042+00:00 INFO - Service starcoin_service_registry::service_registry::RegistryService start.
+2021-08-21T02:48:07.562599333+00:00 INFO - Service starcoin_service_registry::bus::service::BusService start.
+2021-08-21T02:48:07.563512375+00:00 INFO - starcoin_service_registry::service_registry::RegistryService service actor started
+2021-08-21T02:48:07.564385875+00:00 INFO - starcoin_service_registry::bus::service::BusService service actor started
+2021-08-21T02:48:07.566082667+00:00 INFO - Put shared by type: alloc::sync::Arc<starcoin_config::NodeConfig>
+2021-08-21T02:48:07.568640083+00:00 INFO - Put shared by type: alloc::sync::Arc<starcoin_logger::LoggerHandle>
+2021-08-21T02:48:08.354691750+00:00 INFO - Put shared by type: alloc::sync::Arc<starcoin_storage::Storage>
+2021-08-21T02:48:09.615856043+00:00 INFO - [starcoin-vm] Executed txn: HashValue(0xfd13d75bbf9ac721218e6e16183383d4c6dec173c19996846166867e760601bf) (sender: 0x00000000000000000000000000000001, sequence_number: 0) txn_status: Keep(EXECUTED), gas_used: 0, vm_status: Executed
+2021-08-21T02:48:09.689997126+00:00 INFO - Build and save new genesis: Genesis {block: HashValue(0x17533df3d3acc0d159b26a72b92f23b011215fd5a2684f4a48182b9eb32c382b); parent_hash: HashValue(0x3a9c4141b1893c28c96eda9dd937145fe3cee63c0160b91a391b9afe789c5fd5); timestamp: 0; accumulator_root: HashValue(0x2128f8918be4291c55d41c19221f5b079201035ac0b17087f6a2f5f5efb822f6); state_root: HashValue(0x32060c329a5e8e3e28a569ab1f74760b56194ad9eac41c2bcd3f5274b12c292e); difficulty: 1; body_hash: HashValue(0x7f551cbc8fefa7789692d4035be4af8396bd2835a87e2cb30236940626f81b4d); chain_id: ChainId { id: 254 }; }
+2021-08-21T02:48:10.024229334+00:00 INFO - [starcoin-vm] Executed txn: HashValue(0xfd13d75bbf9ac721218e6e16183383d4c6dec173c19996846166867e760601bf) (sender: 0x00000000000000000000000000000001, sequence_number: 0) txn_status: Keep(EXECUTED), gas_used: 0, vm_status: Executed
+2021-08-21T02:48:10.110589710+00:00 INFO - Start node with chain info: {"chain_id":{"id":254},"genesis_hash":"0x17533df3d3acc0d159b26a72b92f23b011215fd5a2684f4a48182b9eb32c382b","status":{"head":{"parent_hash":"0x3a9c4141b1893c28c96eda9dd937145fe3cee63c0160b91a391b9afe789c5fd5","timestamp":0,"number":0,"author":"0x00000000000000000000000000000001","author_auth_key":null,"txn_accumulator_root":"0x2128f8918be4291c55d41c19221f5b079201035ac0b17087f6a2f5f5efb822f6","block_accumulator_root":"0x414343554d554c41544f525f504c414345484f4c4445525f4841534800000000","state_root":"0x32060c329a5e8e3e28a569ab1f74760b56194ad9eac41c2bcd3f5274b12c292e","gas_used":0,"difficulty":"0x01","body_hash":"0x7f551cbc8fefa7789692d4035be4af8396bd2835a87e2cb30236940626f81b4d","chain_id":{"id":254},"nonce":0,"extra":"0x00000000"},"info":{"block_id":"0x17533df3d3acc0d159b26a72b92f23b011215fd5a2684f4a48182b9eb32c382b","total_difficulty":"0x01","txn_accumulator_info":{"accumulator_root":"0x2128f8918be4291c55d41c19221f5b079201035ac0b17087f6a2f5f5efb822f6","frozen_subtree_roots":["0x2128f8918be4291c55d41c19221f5b079201035ac0b17087f6a2f5f5efb822f6"],"num_leaves":1,"num_nodes":1},"block_accumulator_info":{"accumulator_root":"0x17533df3d3acc0d159b26a72b92f23b011215fd5a2684f4a48182b9eb32c382b","frozen_subtree_roots":["0x17533df3d3acc0d159b26a72b92f23b011215fd5a2684f4a48182b9eb32c382b"],"num_leaves":1,"num_nodes":1}}}}
+2021-08-21T02:48:10.113847585+00:00 INFO - Put shared by type: starcoin_genesis::Genesis
+2021-08-21T02:48:10.115667543+00:00 INFO - Registry service: starcoin_node::node::NodeService
+2021-08-21T02:48:10.118480085+00:00 INFO - Service starcoin_node::node::NodeService start.
+2021-08-21T02:48:10.119456043+00:00 INFO - Registry service: starcoin_state_service::service::ChainStateService
+2021-08-21T02:48:10.120394835+00:00 INFO - starcoin_node::node::NodeService service actor started
+2021-08-21T02:48:10.133162876+00:00 INFO - Service starcoin_state_service::service::ChainStateService start.
+2021-08-21T02:48:10.133962876+00:00 INFO - starcoin_state_service::service::ChainStateService service actor started
+2021-08-21T02:48:10.330386835+00:00 INFO - Put shared by type: starcoin_account::account_storage::AccountStorage
+2021-08-21T02:48:10.331682876+00:00 INFO - Registry service: starcoin_account_service::service::AccountService
+2021-08-21T02:48:10.334819460+00:00 INFO - Registry service: starcoin_account_service::account_events::AccountEventService
+2021-08-21T02:48:10.339137585+00:00 INFO - Registry service: starcoin_txpool::TxPoolActorService
+2021-08-21T02:48:10.344526585+00:00 INFO - Service starcoin_account_service::account_events::AccountEventService start.
+2021-08-21T02:48:10.347323543+00:00 INFO - starcoin_account_service::account_events::AccountEventService service actor started
+2021-08-21T02:48:10.375149751+00:00 INFO - Put shared by type: starcoin_txpool::tx_pool_service_impl::TxPoolService
+2021-08-21T02:48:10.381547668+00:00 INFO - Service starcoin_txpool::TxPoolActorService start.
+2021-08-21T02:48:10.382213543+00:00 INFO - starcoin_txpool::TxPoolActorService service actor started
+2021-08-21T02:48:10.396935001+00:00 INFO - Import association account to wallet.
+2021-08-21T02:48:10.398117793+00:00 INFO - Service starcoin_account_service::service::AccountService start.
+2021-08-21T02:48:10.398936710+00:00 INFO - starcoin_account_service::service::AccountService service actor started
+2021-08-21T02:48:10.545674960+00:00 INFO - Registry service: starcoin_chain_service::chain_service::ChainReaderService
+2021-08-21T02:48:10.551395210+00:00 INFO - Registry service: starcoin_chain_notify::ChainNotifyHandlerService
+2021-08-21T02:48:10.556379418+00:00 INFO - Registry service: starcoin_sync::block_connector::block_connector_service::BlockConnectorService
+2021-08-21T02:48:10.561063835+00:00 INFO - Registry service: starcoin_sync::sync::SyncService
+2021-08-21T02:48:10.565920876+00:00 INFO - Service starcoin_chain_service::chain_service::ChainReaderService start.
+2021-08-21T02:48:10.567166835+00:00 INFO - Service starcoin_chain_notify::ChainNotifyHandlerService start.
+2021-08-21T02:48:10.568117960+00:00 INFO - Registry service: starcoin_block_relayer::block_relayer::BlockRelayer
+2021-08-21T02:48:10.568741460+00:00 INFO - starcoin_chain_service::chain_service::ChainReaderService service actor started
+2021-08-21T02:48:10.569298960+00:00 INFO - starcoin_chain_notify::ChainNotifyHandlerService service actor started
+2021-08-21T02:48:10.578321501+00:00 INFO - Registry service: starcoin_network_rpc::NetworkRpcService
+2021-08-21T02:48:10.583882335+00:00 INFO - Registry service: starcoin_sync::announcement::AnnouncementService
+2021-08-21T02:48:10.591856168+00:00 INFO - Service starcoin_sync::block_connector::block_connector_service::BlockConnectorService start.
+2021-08-21T02:48:10.593719418+00:00 INFO - Service starcoin_block_relayer::block_relayer::BlockRelayer start.
+2021-08-21T02:48:10.594598835+00:00 INFO - Registry service: starcoin_network::service::NetworkActorService
+2021-08-21T02:48:10.595512043+00:00 INFO - Service starcoin_sync::sync::SyncService start.
+2021-08-21T02:48:10.597166335+00:00 INFO - starcoin_sync::block_connector::block_connector_service::BlockConnectorService service actor started
+2021-08-21T02:48:10.597854751+00:00 INFO - starcoin_block_relayer::block_relayer::BlockRelayer service actor started
+2021-08-21T02:48:10.598569751+00:00 INFO - starcoin_sync::sync::SyncService service actor started
+2021-08-21T02:48:10.608204168+00:00 INFO - Service starcoin_sync::announcement::AnnouncementService start.
+2021-08-21T02:48:10.609640335+00:00 INFO - starcoin_sync::announcement::AnnouncementService service actor started
+2021-08-21T02:48:10.628563751+00:00 INFO - Service starcoin_network_rpc::NetworkRpcService start.
+2021-08-21T02:48:10.632514543+00:00 INFO - starcoin_network_rpc::NetworkRpcService service actor started
+2021-08-21T02:48:10.635622418+00:00 INFO - Final bootstrap seeds: []
+2021-08-21T02:48:10.639880418+00:00 INFO - Local node identity is: 12D3KooWJXS5MSF9jZuHCL5vWxVqeLtTfSWLoTeosPuejibgm5SU
+2021-08-21T02:48:10.677129210+00:00 INFO - Put shared by type: starcoin_network::service_ref::NetworkServiceRef
+2021-08-21T02:48:10.679698918+00:00 INFO - Service starcoin_network::service::NetworkActorService start.
+2021-08-21T02:48:10.680610793+00:00 INFO - starcoin_network::service::NetworkActorService service actor started
+2021-08-21T02:48:10.807964126+00:00 INFO - Registry service: starcoin_sync::txn_sync::TxnSyncService
+2021-08-21T02:48:10.817086960+00:00 INFO - Self peer_id is: 12D3KooWJXS5MSF9jZuHCL5vWxVqeLtTfSWLoTeosPuejibgm5SU
+2021-08-21T02:48:10.850583168+00:00 INFO - Service starcoin_sync::txn_sync::TxnSyncService start.
+2021-08-21T02:48:10.855234752+00:00 INFO - Self address is: /ip4/127.0.0.1/tcp/9840/p2p/12D3KooWJXS5MSF9jZuHCL5vWxVqeLtTfSWLoTeosPuejibgm5SU
+2021-08-21T02:48:10.857661460+00:00 INFO - starcoin_sync::txn_sync::TxnSyncService service actor started
+2021-08-21T02:48:10.861325627+00:00 INFO - Registry service: starcoin_miner::create_block_template::CreateBlockTemplateService
+2021-08-21T02:48:10.869796418+00:00 INFO - Registry service: starcoin_miner::MinerService
+2021-08-21T02:48:10.875659293+00:00 INFO - Put shared by type: starcoin_config::miner_config::MinerClientConfig
+2021-08-21T02:48:10.880952210+00:00 INFO - Put shared by type: starcoin_miner_client::job_bus_client::JobBusClient
+2021-08-21T02:48:10.883658252+00:00 INFO - Service starcoin_miner::MinerService start.
+2021-08-21T02:48:10.885163918+00:00 INFO - starcoin_miner::MinerService service actor started
+2021-08-21T02:48:10.886627085+00:00 INFO - Registry service: starcoin_miner_client::miner::MinerClientService<starcoin_miner_client::job_bus_client::JobBusClient>
+2021-08-21T02:48:10.895558043+00:00 INFO - Registry service: starcoin_stratum::stratum::Stratum
+2021-08-21T02:48:10.902985585+00:00 INFO - Service starcoin_stratum::stratum::Stratum start.
+2021-08-21T02:48:10.904042377+00:00 INFO - Registry service: starcoin_miner::generate_block_event_pacemaker::GenerateBlockEventPacemaker
+2021-08-21T02:48:10.904976793+00:00 INFO - starcoin_stratum::stratum::Stratum service actor started
+2021-08-21T02:48:10.908923418+00:00 INFO - Service starcoin_miner_client::miner::MinerClientService<starcoin_miner_client::job_bus_client::JobBusClient> start.
+2021-08-21T02:48:10.910832085+00:00 INFO - starcoin_miner_client::miner::MinerClientService<starcoin_miner_client::job_bus_client::JobBusClient> service actor started
+2021-08-21T02:48:10.912650418+00:00 INFO - Service starcoin_miner::create_block_template::CreateBlockTemplateService start.
+2021-08-21T02:48:10.914335418+00:00 INFO - Service starcoin_miner::generate_block_event_pacemaker::GenerateBlockEventPacemaker start.
+2021-08-21T02:48:10.914868668+00:00 INFO - starcoin_miner::create_block_template::CreateBlockTemplateService service actor started
+2021-08-21T02:48:10.915742043+00:00 INFO - starcoin_miner::generate_block_event_pacemaker::GenerateBlockEventPacemaker service actor started
+2021-08-21T02:48:11.919140085+00:00 INFO - Registry service: starcoin_rpc_server::module::pubsub::PubSubService
+2021-08-21T02:48:11.926259252+00:00 INFO - [sync] Start checking sync,skip_pow_verify:false, special peers: []
+2021-08-21T02:48:11.941296044+00:00 INFO - Registry service: starcoin_rpc_server::service::RpcService
+2021-08-21T02:48:11.971627377+00:00 INFO - Registry service: starcoin_stratum::service::StratumService
+2021-08-21T02:48:11.995674544+00:00 INFO - [CreateBlockTemplate] previous_header: BlockHeader { id: Some(HashValue(0x17533df3d3acc0d159b26a72b92f23b011215fd5a2684f4a48182b9eb32c382b)), parent_hash: HashValue(0x3a9c4141b1893c28c96eda9dd937145fe3cee63c0160b91a391b9afe789c5fd5), timestamp: 0, number: 0, author: 0x00000000000000000000000000000001, author_auth_key: None, txn_accumulator_root: HashValue(0x2128f8918be4291c55d41c19221f5b079201035ac0b17087f6a2f5f5efb822f6), block_accumulator_root: HashValue(0x414343554d554c41544f525f504c414345484f4c4445525f4841534800000000), state_root: HashValue(0x32060c329a5e8e3e28a569ab1f74760b56194ad9eac41c2bcd3f5274b12c292e), gas_used: 0, difficulty: 1, body_hash: HashValue(0x7f551cbc8fefa7789692d4035be4af8396bd2835a87e2cb30236940626f81b4d), chain_id: ChainId { id: 254 }, nonce: 0, extra: BlockHeaderExtra([0, 0, 0, 0]) }, block_gas_limit: 50000000, max_txns: 500000, txn len: 0, uncles len: 0, timestamp: 1
+2021-08-21T02:48:12.014710544+00:00 INFO - epoch: Epoch { number: 0, start_time: 0, start_block_number: 0, end_block_number: 48, block_time_target: 10000, reward_per_block: 10000000000, reward_per_uncle_percent: 10, block_difficulty_window: 24, max_uncles_per_block: 2, block_gas_limit: 50000000, strategy: 0, new_epoch_events: EventHandle { count: 0, key: EventKey([9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]) } }
+2021-08-21T02:48:12.019798627+00:00 INFO - Service starcoin_rpc_server::module::pubsub::PubSubService start.
+2021-08-21T02:48:12.025921252+00:00 INFO - Connect by in process channel
+2021-08-21T02:48:12.030355502+00:00 INFO - starcoin_rpc_server::module::pubsub::PubSubService service actor started
+2021-08-21T02:48:12.069773377+00:00 INFO - Service starcoin_stratum::service::StratumService start.
+2021-08-21T02:48:12.077050335+00:00 INFO - starcoin_stratum::service::StratumService service actor started
+2021-08-21T02:48:12.099486752+00:00 INFO - Ipc rpc server start at :"/data/starcoin/dev/starcoin.ipc"
+2021-08-21T02:48:12.131099919+00:00 INFO - Rpc: http server start at :0.0.0.0:9850
+2021-08-21T02:48:12.135474919+00:00 INFO - Rpc: tcp server start at: 0.0.0.0:9860
+2021-08-21T02:48:12.138531877+00:00 INFO - Listening for new connections on 0.0.0.0:9870.
+2021-08-21T02:48:12.140222335+00:00 INFO - Rpc: websocket server start at: 0.0.0.0:9870
+2021-08-21T02:48:12.143219169+00:00 INFO - Service starcoin_rpc_server::service::RpcService start.
+2021-08-21T02:48:12.144732294+00:00 INFO - starcoin_rpc_server::service::RpcService service actor started
+2021-08-21T02:48:12.152526544+00:00 INFO - ChainWater actor started
+2021-08-21T02:48:12.192237419+00:00 INFO - Start console, disable stderr output.
+2021-08-21T02:49:06.766296416+00:00 INFO - Miner account change to 0x9b8ee4aa325ca99e62c4532a4dffe593
+2021-08-21T02:49:17.208355880+00:00 INFO add 2057b08e69255423780bcd706aaac5a3cfb981428d198a58d9458ec90c88e213 0000000000000000000000000a550c18 0 1 10000000 3600, action: add, hash: 2057b08e69255423780bcd706aaac5a3cfb981428d198a58d9458ec90c88e213, sender: 0000000000000000000000000a550c18, expiration_timestamp_secs: 3600, gas: 10000000, gas_price: 1, nonce: 0
+2021-08-21T02:49:18.421145505+00:00 INFO - [CreateBlockTemplate] previous_header: BlockHeader { id: Some(HashValue(0x17533df3d3acc0d159b26a72b92f23b011215fd5a2684f4a48182b9eb32c382b)), parent_hash: HashValue(0x3a9c4141b1893c28c96eda9dd937145fe3cee63c0160b91a391b9afe789c5fd5), timestamp: 0, number: 0, author: 0x00000000000000000000000000000001, author_auth_key: None, txn_accumulator_root: HashValue(0x2128f8918be4291c55d41c19221f5b079201035ac0b17087f6a2f5f5efb822f6), block_accumulator_root: HashValue(0x414343554d554c41544f525f504c414345484f4c4445525f4841534800000000), state_root: HashValue(0x32060c329a5e8e3e28a569ab1f74760b56194ad9eac41c2bcd3f5274b12c292e), gas_used: 0, difficulty: 1, body_hash: HashValue(0x7f551cbc8fefa7789692d4035be4af8396bd2835a87e2cb30236940626f81b4d), chain_id: ChainId { id: 254 }, nonce: 0, extra: BlockHeaderExtra([0, 0, 0, 0]) }, block_gas_limit: 50000000, max_txns: 500000, txn len: 1, uncles len: 0, timestamp: 1
+2021-08-21T02:49:18.425249172+00:00 INFO - epoch: Epoch { number: 0, start_time: 0, start_block_number: 0, end_block_number: 48, block_time_target: 10000, reward_per_block: 10000000000, reward_per_uncle_percent: 10, block_difficulty_window: 24, max_uncles_per_block: 2, block_gas_limit: 50000000, strategy: 0, new_epoch_events: EventHandle { count: 0, key: EventKey([9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]) } }
+2021-08-21T02:49:18.601968880+00:00 INFO - [starcoin-vm] Executed txn: HashValue(0x2057b08e69255423780bcd706aaac5a3cfb981428d198a58d9458ec90c88e213) (sender: 0x0000000000000000000000000a550c18, sequence_number: 0) txn_status: Keep(EXECUTED), gas_used: 119769, vm_status: Executed
+2021-08-21T02:49:18.613994922+00:00 INFO - DummyConsensus rand sleep time in millis second : 5705, difficulty : 10000
+2021-08-21T02:49:18.616803964+00:00 INFO - Mint new block: Block{id:"0x9a81fd327b6e45caf81ac0fe64b0bfc5f3b4b8cf5ba69b3fa9cd37784a7f1067", number:"1", parent_id:"0x17533df3d3acc0d159b26a72b92f23b011215fd5a2684f4a48182b9eb32c382b",transactions:["0x2057b08e69255423780bcd706aaac5a3cfb981428d198a58d9458ec90c88e213",]}
+2021-08-21T02:49:18.618226714+00:00 INFO - Miner client Total seals found:   1
+2021-08-21T02:49:18.699101839+00:00 INFO - [starcoin-vm] Executed txn: HashValue(0x2057b08e69255423780bcd706aaac5a3cfb981428d198a58d9458ec90c88e213) (sender: 0x0000000000000000000000000a550c18, sequence_number: 0) txn_status: Keep(EXECUTED), gas_used: 119769, vm_status: Executed
+2021-08-21T02:49:18.728818130+00:00 INFO cull 2057b08e69255423780bcd706aaac5a3cfb981428d198a58d9458ec90c88e213, action: cull, hash: 2057b08e69255423780bcd706aaac5a3cfb981428d198a58d9458ec90c88e213
+2021-08-21T02:49:18.740085005+00:00 INFO - [chain] Select new head, id: 0x9a81fd327b6e45caf81ac0fe64b0bfc5f3b4b8cf5ba69b3fa9cd37784a7f1067, number: 1, total_difficulty: 10001, enacted_block_count: 1, retracted_block_count: 0
+2021-08-21T02:49:18.753063797+00:00 INFO - [CreateBlockTemplate] previous_header: BlockHeader { id: Some(HashValue(0x9a81fd327b6e45caf81ac0fe64b0bfc5f3b4b8cf5ba69b3fa9cd37784a7f1067)), parent_hash: HashValue(0x17533df3d3acc0d159b26a72b92f23b011215fd5a2684f4a48182b9eb32c382b), timestamp: 1, number: 1, author: 0x9b8ee4aa325ca99e62c4532a4dffe593, author_auth_key: None, txn_accumulator_root: HashValue(0xaf6b12c896336161e4ec850ee71b43f7a0c36b8ad4217eb2bcb1e40d1e03a6ef), block_accumulator_root: HashValue(0x17533df3d3acc0d159b26a72b92f23b011215fd5a2684f4a48182b9eb32c382b), state_root: HashValue(0xef411ba9429972802deae1fe5e059810e256acec735fe6af41183a2ad1c6d06f), gas_used: 119769, difficulty: 10000, body_hash: HashValue(0x284a5d998470dd1fa3fc9ebe8cb522a1697989e141d58581e70cb9315f2f26ec), chain_id: ChainId { id: 254 }, nonce: 5705, extra: BlockHeaderExtra([0, 0, 0, 0]) }, block_gas_limit: 50000000, max_txns: 500000, txn len: 0, uncles len: 0, timestamp: 5706
+2021-08-21T02:49:18.753859464+00:00 INFO - epoch: Epoch { number: 0, start_time: 0, start_block_number: 0, end_block_number: 48, block_time_target: 10000, reward_per_block: 10000000000, reward_per_uncle_percent: 10, block_difficulty_window: 24, max_uncles_per_block: 2, block_gas_limit: 50000000, strategy: 0, new_epoch_events: EventHandle { count: 0, key: EventKey([9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]) } }
+2021-08-21T02:49:18.763943255+00:00 INFO - addr 0x9b8ee4aa325ca99e62c4532a4dffe593 accept new token 0x00000000000000000000000000000001::STC::STC
+2021-08-21T02:49:18.837634755+00:00 INFO - [CreateBlockTemplate] previous_header: BlockHeader { id: Some(HashValue(0x9a81fd327b6e45caf81ac0fe64b0bfc5f3b4b8cf5ba69b3fa9cd37784a7f1067)), parent_hash: HashValue(0x17533df3d3acc0d159b26a72b92f23b011215fd5a2684f4a48182b9eb32c382b), timestamp: 1, number: 1, author: 0x9b8ee4aa325ca99e62c4532a4dffe593, author_auth_key: None, txn_accumulator_root: HashValue(0xaf6b12c896336161e4ec850ee71b43f7a0c36b8ad4217eb2bcb1e40d1e03a6ef), block_accumulator_root: HashValue(0x17533df3d3acc0d159b26a72b92f23b011215fd5a2684f4a48182b9eb32c382b), state_root: HashValue(0xef411ba9429972802deae1fe5e059810e256acec735fe6af41183a2ad1c6d06f), gas_used: 119769, difficulty: 10000, body_hash: HashValue(0x284a5d998470dd1fa3fc9ebe8cb522a1697989e141d58581e70cb9315f2f26ec), chain_id: ChainId { id: 254 }, nonce: 5705, extra: BlockHeaderExtra([0, 0, 0, 0]) }, block_gas_limit: 50000000, max_txns: 500000, txn len: 0, uncles len: 0, timestamp: 5706
+2021-08-21T02:49:18.838818297+00:00 INFO - epoch: Epoch { number: 0, start_time: 0, start_block_number: 0, end_block_number: 48, block_time_target: 10000, reward_per_block: 10000000000, reward_per_uncle_percent: 10, block_difficulty_window: 24, max_uncles_per_block: 2, block_gas_limit: 50000000, strategy: 0, new_epoch_events: EventHandle { count: 0, key: EventKey([9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]) } }
+2021-08-21T02:49:42.241734502+00:00 INFO - Receive StopSystem request, try to stop system.
+2021-08-21T02:49:42.245497336+00:00 INFO - Start to shutdown system
+2021-08-21T02:49:42.246446127+00:00 INFO - Start to shutdown starcoin_stratum::service::StratumService.
+2021-08-21T02:49:42.247963794+00:00 INFO - Start to shutdown starcoin_rpc_server::service::RpcService.
+2021-08-21T02:49:42.249219919+00:00 INFO - Start to shutdown starcoin_rpc_server::module::pubsub::PubSubService.
+2021-08-21T02:49:42.250303961+00:00 INFO - Start to shutdown starcoin_miner::generate_block_event_pacemaker::GenerateBlockEventPacemaker.
+2021-08-21T02:49:42.251726669+00:00 INFO - Service starcoin_rpc_server::module::pubsub::PubSubService stop.
+2021-08-21T02:49:42.253124877+00:00 INFO - starcoin_rpc_server::module::pubsub::PubSubService service actor stopped
+2021-08-21T02:49:42.253952002+00:00 INFO - Start to shutdown starcoin_stratum::stratum::Stratum.
+2021-08-21T02:49:42.256371669+00:00 INFO - Service starcoin_miner::generate_block_event_pacemaker::GenerateBlockEventPacemaker stop.
+2021-08-21T02:49:42.257592544+00:00 INFO - starcoin_miner::generate_block_event_pacemaker::GenerateBlockEventPacemaker service actor stopped
+2021-08-21T02:49:42.259425211+00:00 INFO - Start to shutdown starcoin_miner_client::miner::MinerClientService<starcoin_miner_client::job_bus_client::JobBusClient>.
+2021-08-21T02:49:42.260666294+00:00 INFO - Service starcoin_stratum::stratum::Stratum stop.
+2021-08-21T02:49:42.261511877+00:00 INFO - starcoin_stratum::stratum::Stratum service actor stopped
+2021-08-21T02:49:42.262597461+00:00 INFO - Start to shutdown starcoin_miner::MinerService.
+2021-08-21T02:49:42.263945336+00:00 INFO - Start to shutdown starcoin_miner::create_block_template::CreateBlockTemplateService.
+2021-08-21T02:49:42.265301211+00:00 INFO - Start to shutdown starcoin_sync::txn_sync::TxnSyncService.
+2021-08-21T02:49:42.267052211+00:00 INFO - Start to shutdown starcoin_network::service::NetworkActorService.
+2021-08-21T02:49:42.268289752+00:00 INFO - Service starcoin_miner_client::miner::MinerClientService<starcoin_miner_client::job_bus_client::JobBusClient> stop.
+2021-08-21T02:49:42.269703044+00:00 INFO - Service starcoin_miner::MinerService stop.
+2021-08-21T02:49:42.270740252+00:00 INFO - Service starcoin_sync::txn_sync::TxnSyncService stop.
+2021-08-21T02:49:42.271595169+00:00 INFO - Start to shutdown starcoin_sync::announcement::AnnouncementService.
+2021-08-21T02:49:42.272640336+00:00 INFO - starcoin_sync::txn_sync::TxnSyncService service actor stopped
+2021-08-21T02:49:42.274850586+00:00 INFO - starcoin_miner::MinerService service actor stopped
+2021-08-21T02:49:42.275723127+00:00 INFO - starcoin_miner_client::miner::MinerClientService<starcoin_miner_client::job_bus_client::JobBusClient> service actor stopped
+2021-08-21T02:49:42.276736586+00:00 INFO - Start to shutdown starcoin_network_rpc::NetworkRpcService.
+2021-08-21T02:49:42.278434627+00:00 INFO - Service starcoin_sync::announcement::AnnouncementService stop.
+2021-08-21T02:49:42.279472127+00:00 INFO - Start to shutdown starcoin_block_relayer::block_relayer::BlockRelayer.
+2021-08-21T02:49:42.280592086+00:00 INFO - starcoin_sync::announcement::AnnouncementService service actor stopped
+2021-08-21T02:49:42.281382419+00:00 INFO - Start to shutdown starcoin_sync::sync::SyncService.
+2021-08-21T02:49:42.282338961+00:00 INFO - Start to shutdown starcoin_sync::block_connector::block_connector_service::BlockConnectorService.
+2021-08-21T02:49:42.283810169+00:00 INFO - Service starcoin_miner::create_block_template::CreateBlockTemplateService stop.
+2021-08-21T02:49:42.284679461+00:00 INFO - Start to shutdown starcoin_chain_notify::ChainNotifyHandlerService.
+2021-08-21T02:49:42.287469752+00:00 INFO - starcoin_miner::create_block_template::CreateBlockTemplateService service actor stopped
+2021-08-21T02:49:42.288656794+00:00 INFO - Start to shutdown starcoin_chain_service::chain_service::ChainReaderService.
+2021-08-21T02:49:42.290120711+00:00 INFO - Start to shutdown starcoin_txpool::TxPoolActorService.
+2021-08-21T02:49:42.291389252+00:00 INFO - Service starcoin_chain_notify::ChainNotifyHandlerService stop.
+2021-08-21T02:49:42.292126127+00:00 INFO - Service starcoin_sync::block_connector::block_connector_service::BlockConnectorService stop.
+2021-08-21T02:49:42.293154794+00:00 INFO - Start to shutdown starcoin_account_service::account_events::AccountEventService.
+2021-08-21T02:49:42.293921294+00:00 INFO - Service starcoin_stratum::service::StratumService stop.
+2021-08-21T02:49:42.294751627+00:00 INFO - starcoin_chain_notify::ChainNotifyHandlerService service actor stopped
+2021-08-21T02:49:42.295557919+00:00 INFO - starcoin_sync::block_connector::block_connector_service::BlockConnectorService service actor stopped
+2021-08-21T02:49:42.296432169+00:00 INFO - Service starcoin_block_relayer::block_relayer::BlockRelayer stop.
+2021-08-21T02:49:42.297167211+00:00 INFO - Start to shutdown starcoin_account_service::service::AccountService.
+2021-08-21T02:49:42.297878336+00:00 INFO - Service starcoin_txpool::TxPoolActorService stop.
+2021-08-21T02:49:42.298604044+00:00 INFO - Service starcoin_sync::sync::SyncService stop.
+2021-08-21T02:49:42.299460461+00:00 INFO - Service starcoin_network_rpc::NetworkRpcService stop.
+2021-08-21T02:49:42.300110336+00:00 INFO - Service starcoin_network::service::NetworkActorService stop.
+2021-08-21T02:49:42.300938002+00:00 INFO - Service starcoin_chain_service::chain_service::ChainReaderService stop.
+2021-08-21T02:49:42.301868169+00:00 INFO - starcoin_stratum::service::StratumService service actor stopped
+2021-08-21T02:49:42.302439502+00:00 INFO - Service starcoin_account_service::service::AccountService stop.
+2021-08-21T02:49:42.303475044+00:00 INFO - starcoin_txpool::TxPoolActorService service actor stopped
+2021-08-21T02:49:42.304287002+00:00 INFO - starcoin_sync::sync::SyncService service actor stopped
+2021-08-21T02:49:42.304937877+00:00 INFO - Start to shutdown starcoin_state_service::service::ChainStateService.
+2021-08-21T02:49:42.305489377+00:00 INFO - Service starcoin_account_service::account_events::AccountEventService stop.
+2021-08-21T02:49:42.306090836+00:00 INFO - starcoin_block_relayer::block_relayer::BlockRelayer service actor stopped
+2021-08-21T02:49:42.306740586+00:00 INFO - starcoin_network::service::NetworkActorService service actor stopped
+2021-08-21T02:49:42.307302961+00:00 INFO - starcoin_network_rpc::NetworkRpcService service actor stopped
+2021-08-21T02:49:42.307875669+00:00 INFO - starcoin_chain_service::chain_service::ChainReaderService service actor stopped
+2021-08-21T02:49:42.308745252+00:00 INFO - starcoin_account_service::service::AccountService service actor stopped
+2021-08-21T02:49:42.309454252+00:00 INFO - Start to shutdown starcoin_node::node::NodeService.
+2021-08-21T02:49:42.310068502+00:00 INFO - starcoin_account_service::account_events::AccountEventService service actor stopped
+2021-08-21T02:49:42.311453377+00:00 INFO - Start to shutdown starcoin_service_registry::bus::service::BusService.
+2021-08-21T02:49:42.313081044+00:00 INFO - Service starcoin_state_service::service::ChainStateService stop.
+2021-08-21T02:49:42.314508586+00:00 INFO - starcoin_state_service::service::ChainStateService service actor stopped
+2021-08-21T02:49:42.324960169+00:00 INFO - Service starcoin_service_registry::bus::service::BusService stop.
+2021-08-21T02:49:42.326722877+00:00 INFO - starcoin_service_registry::bus::service::BusService service actor stopped
+2021-08-21T02:49:42.332951294+00:00 INFO - Rpc Sever is closed.
+2021-08-21T02:49:42.334346669+00:00 INFO - Service starcoin_rpc_server::service::RpcService stop.
+2021-08-21T02:49:42.335279377+00:00 INFO - starcoin_rpc_server::service::RpcService service actor stopped
+2021-08-21T02:49:42.337815044+00:00 INFO - ChainWater actor stopped
+2021-08-21T02:49:42.355510252+00:00 INFO - Service starcoin_service_registry::service_registry::RegistryService stop.
+2021-08-21T02:49:42.356263002+00:00 INFO - starcoin_service_registry::service_registry::RegistryService service actor stopped
+2021-08-21T02:49:44.323714670+00:00 INFO - Service starcoin_node::node::NodeService stop.
+2021-08-21T02:49:44.330924420+00:00 INFO - starcoin_node::node::NodeService service actor stopped
