@@ -2074,3 +2074,5 @@ Stalls(count): 0 level0_slowdown, 0 level0_slowdown_with_compaction, 0 level0_nu
 
 ** Compaction Stats [transaction] **
 Level    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec)
+2021/08/21-02:09:40.467720 4175fc5700 [db/db_impl/db_impl.cc:463] Shutdown: canceling all background work
+2021/08/21-02:09:40.478901 4175fc5700 [db/db_impl/db_impl.cc:642] Shutdown complete
